@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rithik Sharma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Rithik.dev</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1 style="text-align:center; font-size:2.8rem; color:var(--primary-accent); margin-bottom: 10px;">Contact <span class="highlight">Me</span></h1>
+    <p class="contact-description" style="text-align:center; color:var(--secondary-accent); font-size:1.1rem; margin-bottom: 40px;">
+      I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to contact me via the form or the details below.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p><strong>Email:</strong> rithiksharma006@gmail.com</p>
+        <p><strong>Phone:</strong> +91 88940 66915</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rithik-sharma-19aa51295/" target="_blank">linkedin.com/in/rithik-sharma</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Rit005" target="_blank">github.com/Rit005</a></p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="https://formspree.io/f/mjkylvbz" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

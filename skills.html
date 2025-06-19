@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Skills | Rithik Sharma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Rithik.dev</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <div class="section-content">
+      <h1 class="section-title">Tech <span class="highlight">Stack</span></h1>
+
+      <div class="skill-category">
+        <h2>Languages</h2>
+        <p>Python, JavaScript</p>
+      </div>
+
+      <div class="skill-category">
+        <h2>Frontend</h2>
+        <p>HTML, CSS, JavaScript, React.js</p>
+      </div>
+
+      <div class="skill-category">
+        <h2>Backend</h2>
+        <p>Node.js, Express.js, Django</p>
+      </div>
+
+      <div class="skill-category">
+        <h2>Databases</h2>
+        <p>MySQL, MongoDB</p>
+      </div>
+
+      <div class="skill-category">
+        <h2>Dev Tools</h2>
+        <p>Git & GitHub, VS Code, IntelliJ, Postman</p>
+      </div>
+
+      <div class="skill-category">
+        <h2>Data & Analytics</h2>
+        <p>Machine Learning, Power BI</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // dynamic animation for skills fade in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.skill-category').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
