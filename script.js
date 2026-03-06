@@ -1,78 +1,88 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
+document.addEventListener("DOMContentLoaded", () => {
 
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light-mode') {
-      body.classList.add('light-mode');
-    }
+  /* -------------------------
+     THEME TOGGLE
+  --------------------------*/
+  const themeToggle = document.getElementById("theme-toggle");
+  const body = document.body;
 
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-      // Save theme preference
-      if (body.classList.contains('light-mode')) {
-        localStorage.setItem('theme', 'light-mode');
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "light-mode") {
+    body.classList.add("light-mode");
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("light-mode");
+
+      if (body.classList.contains("light-mode")) {
+        localStorage.setItem("theme", "light-mode");
       } else {
-        localStorage.removeItem('theme');
+        localStorage.removeItem("theme");
       }
     });
+  }
 
-    // Dynamic animation for projects fade in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          // Apply a staggered animation using a delay based on index
-          entry.target.style.animationDelay = `${index * 0.15}s`;
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target); // Stop observing once animated
-        }
-      });
-    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
 
-    document.querySelectorAll('.project').forEach((el, index) => {
-      // Set a CSS variable for animation delay for staggered effect
-      el.style.setProperty('--animation-delay', `${index * 0.15}s`);
-      observer.observe(el);
+  /* -------------------------
+     TYPING ANIMATION
+  --------------------------*/
+  const typingElement = document.querySelector(".typing");
+
+  if (typingElement) {
+    new Typed(".typing", {
+      strings: [
+        "AI & Technology Enthusiast",
+        "Aspiring Software Developer",
+        "Aspiring Full Stack Developer",
+        "Java Developer (Fresher)"
+      ],
+      typeSpeed: 70,
+      backSpeed: 40,
+      backDelay: 1200,
+      loop: true
     });
-  });
+  }
 
-  // JavaScript for theme toggle functionality
-  document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
 
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light-mode') {
-      body.classList.add('light-mode');
-    }
+  /* -------------------------
+     MOBILE MENU
+  --------------------------*/
+  const menuIcon = document.querySelector(".menu-icon");
+  const navbar = document.querySelector(".navbar");
 
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-      // Save theme preference
-      if (body.classList.contains('light-mode')) {
-        localStorage.setItem('theme', 'light-mode');
-      } else {
-        localStorage.removeItem('theme');
+  if (menuIcon) {
+    menuIcon.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  }
+
+
+  /* -------------------------
+     SCROLL ANIMATION
+  --------------------------*/
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationDelay = `${index * 0.15}s`;
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
       }
     });
+  }, { threshold: 0.1 });
 
-    // dynamic animation for skills fade in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          // Apply a staggered animation using a delay based on index
-          entry.target.style.animationDelay = `${index * 0.15}s`;
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target); // Stop observing once animated
-        }
-      });
-    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
 
-    document.querySelectorAll('.skill-category').forEach((el, index) => {
-      // Set a CSS variable for animation delay for staggered effect
-      el.style.setProperty('--animation-delay', `${index * 0.15}s`);
-      observer.observe(el);
-    });
+  /* Animate Projects */
+  document.querySelectorAll(".project").forEach((el, index) => {
+    el.style.setProperty("--animation-delay", `${index * 0.15}s`);
+    observer.observe(el);
   });
+
+  /* Animate Skills */
+  document.querySelectorAll(".skill-category").forEach((el, index) => {
+    el.style.setProperty("--animation-delay", `${index * 0.15}s`);
+    observer.observe(el);
+  });
+
+});

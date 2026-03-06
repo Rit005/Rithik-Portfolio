@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Experience | Rithik Sharma</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="header">
+<a href="#" class="logo">Portfolio</a>
+
+<div class="menu-icon">
+<i class='bx bx-dots-vertical-rounded'></i>
+</div>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="experience.html" class="active">Experience</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="projects">
+
+<div class="projects-container">
+
+<h1 class="section-title">My <span class="highlight">Experience</span></h1>
+
+
+<div class="project">
+
+<h2>🔹 Software Developer Intern – Innodatatics</h2>
+
+<p><strong>Duration:</strong> Jan 2026 – Present</p>
+
+<ul>
+
+<li>
+Developed a full-stack <strong>Pipe Detection & Counting System</strong> using
+<strong>React, Flask, SQLite, and OpenCV</strong>, implementing an end-to-end
+image processing pipeline with automated pipe detection and bounding box visualization.
+</li>
+
+<li>
+Designed and optimized an <strong>image preprocessing pipeline</strong>
+(CLAHE, adaptive thresholding, morphological operations,
+connected component analysis) to improve detection accuracy
+under varying lighting conditions.
+</li>
+
+<li>
+Implemented <strong>JWT-based authentication</strong>,
+<strong>role-based access control (User/Admin)</strong>,
+analysis history tracking, and an <strong>analytics dashboard</strong>
+ensuring secure and scalable architecture.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+const projects = document.querySelectorAll('.project');
+
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+projects.forEach(project => observer.observe(project));
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

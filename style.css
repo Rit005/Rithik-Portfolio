@@ -116,6 +116,14 @@ body.light-mode .header {
   color: var(--primary-accent);
 }
 
+
+.menu-icon{
+  display:none;
+  font-size:26px;
+  color:var(--primary-accent);
+  cursor:pointer;
+}
+
 /* -------------------------------------------
    Theme Toggle Button
 -------------------------------------------- */
@@ -358,9 +366,7 @@ body.light-mode .about-image img {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1rem;
-  .contact-description {
-    color: #66ffe0;
-  }
+  color:#66ffe0;
 }
 
 .contact-info,
@@ -411,7 +417,7 @@ body.light-mode .contact-form {
 
 .contact-form label {
   font-size: 18px;
-  margin-top: 1-px;
+  margin-top: 1px;
   opacity: 0; /* Initial state for animation */
   animation: slideTop 1s ease forwards; /* Animation for labels */
   animation-delay: 0.7s; /* Delay for labels */
@@ -471,33 +477,32 @@ body.light-mode .contact-form textarea:focus {
   box-shadow: 0 0 10px var(--btn-background);
 }
 
-/* Skills Page: .skills-section, .skill-category */
 .skills-section {
-  padding: 140px 10% 80px; /* Adjust padding for header and bottom */
+  padding: 90px 10% 80px; 
   background: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh; /* Ensure it takes full viewport height */
+  min-height: 100vh; 
 }
 
 .section-content {
   max-width: 900px;
   width: 100%;
   text-align: center;
-  margin-top: 10px; /* Space from top padding */
+  margin-top: 10px; 
 }
 
 .skill-category {
   background: var(--background-medium);
   padding: 25px;
   border-radius: 12px;
-  margin-bottom: 25px; /* Space between categories */
+  margin-bottom: 25px; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Align text within categories */
-  opacity: 0; /* Initial state for animation - controlled by JS 'show' class */
-  transform: translateY(20px); /* Initial state for animation - controlled by JS 'show' class */
-  transition: background 0.4s ease, color 0.4s ease, box-shadow 0.4s ease; /* For theme toggle */
+  text-align: left; 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: background 0.4s ease, color 0.4s ease, box-shadow 0.4s ease; 
 }
 
 body.light-mode .skill-category {
@@ -513,7 +518,6 @@ body.light-mode .skill-category {
 }
 
 
-
 .section-title {
   font-size: 3rem;
   margin-top: 1px;
@@ -527,9 +531,9 @@ body.light-mode .skill-category {
   font-size: 1.6rem;
   color: var(--primary-accent);
   margin-bottom: 10px;
-  opacity: 0; /* Initial state for animation */
-  animation: slideBottom 1s ease forwards; /* Animation for skill category h2 */
-  animation-delay: 0.7s; /* Delay for skill category h2 */
+  opacity: 0;
+  animation: slideBottom 1s ease forwards; 
+  animation-delay: 0.7s; 
 }
 .skill-category {
   padding: 20px;
@@ -540,9 +544,9 @@ body.light-mode .skill-category {
   font-size: 1.1rem;
   color: var(--text-primary-dark);
   line-height: 1.6;
-  opacity: 0; /* Initial state for animation */
-  animation: slideLeft 1s ease forwards; /* Animation for skill category paragraphs */
-  animation-delay: 0.7s; /* Delay for skill category paragraphs */
+  opacity: 0; 
+  animation: slideLeft 1s ease forwards; 
+  animation-delay: 0.7s;
 }
 
 
@@ -565,7 +569,7 @@ body.light-mode .skill-category {
 .projects {
   margin-top: 50px;
   margin-bottom: 50px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 80px;
   padding-left: 10%;
   padding-right: 10%;
@@ -594,9 +598,8 @@ body.light-mode .skill-category {
 }
 
 
-.projects-container .section-title { /* Corrected selector */
-  /* Remove margin-top: 0, it's generally not needed here if padding-top on parent is correct */
-  margin-bottom: 50px; /* Keep this for spacing below the title */
+.projects-container .section-title { 
+  margin-bottom: 50px;
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1s;
@@ -609,11 +612,10 @@ body.light-mode .project {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Animation state for projects - triggered by JS 'show' class */
 .project.show {
-  animation: fadeInUp 0.8s ease forwards var(--animation-delay); /* Staggered animation */
-  opacity: 1; /* Ensure opacity is set to 1 by animation */
-  transform: translateY(0); /* Ensure transform is set to 0 by animation */
+  animation: fadeInUp 0.8s ease forwards var(--animation-delay);
+  opacity: 1; 
+  transform: translateY(0); 
 }
 
 .project h2 {
@@ -626,20 +628,99 @@ body.light-mode .project {
   color: var(--text-primary-dark);
   line-height: 1.6;
   margin-bottom: 15px;
-  opacity: 0; /* Initial state for animation */
-  animation: slideLeft 1s ease forwards; /* Animation for project paragraphs */
-  animation-delay: 0.8s; /* Delay for project paragraphs */
+  opacity: 0; 
+  animation: slideLeft 1s ease forwards; 
+  animation-delay: 0.8s; 
 }
 
 .project .btn-secondary {
-  opacity: 0; /* Initial state for animation */
-  animation: slideTop 1s ease forwards; /* Animation for project button */
-  animation-delay: 0.9s; /* Delay for project button */
+  opacity: 0;
+  animation: slideTop 1s ease forwards; 
+  animation-delay: 0.9s; 
 }
 
-/* -------------------------------------------
-   Utility Classes
--------------------------------------------- */
+
+/* =============================
+   EXPERIENCE SECTION
+============================= */
+
+.projects {
+  padding-top: 90px;   /* space from navbar */
+  padding-bottom: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Heading */
+
+.section-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+  color: var(--primary-accent);
+}
+
+/* Experience Card */
+
+.project {
+  background: var(--background-medium);
+  padding: 35px 40px;
+  border-radius: 14px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  width: 100%;
+  max-width: 850px;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+}
+
+body.light-mode .project {
+  background: var(--card-background-dark);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* Title */
+
+.project h2 {
+  font-size: 1.9rem;
+  color: var(--primary-accent);
+  margin-bottom: 8px;
+}
+
+/* Duration */
+
+.project p {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+/* Bullet list */
+
+.project ul {
+  padding-left: 20px;
+}
+
+.project li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+
 .highlight {
   color: var(--primary-accent);
 }
@@ -725,32 +806,96 @@ body.light-mode .btn-secondary:hover {
 }
 
 /* -------------------------------------------
-   Responsive Adjustments
+   Responsive Navigation
 -------------------------------------------- */
+
+@media (max-width:768px){
+
+  .header{
+    padding:1rem 6%;
+  }
+
+  /* show 3 dots */
+  .menu-icon{
+    display:block;
+  }
+
+  /* hide normal navbar */
+  .navbar{
+    position:absolute;
+    top:70px;
+    right:20px;
+
+    width:200px;
+    background:var(--background-medium);
+
+    flex-direction:column;
+    align-items:center;
+    gap:16px;
+
+    padding:20px 0;
+
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
+    transform:scale(0);
+    transform-origin:top right;
+    transition:0.3s;
+  }
+
+  /* when clicking dots */
+  .navbar.active{
+    transform:scale(1);
+  }
+
+  .navbar a{
+    margin:0;
+    font-size:16px;
+  }
+
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
-  .header {
-    padding: 1rem 5%;
-    flex-wrap: wrap;
-    justify-content: center;
+
+  .contact-section {
+    padding: 110px 6% 60px;
   }
 
-  .logo {
-    margin-bottom: 10px;
+  .contact-grid {
+    grid-template-columns: 1fr;   /* stack vertically */
+    gap: 25px;
   }
 
-  .navbar {
+  .contact-info,
+  .contact-form {
+    padding: 22px;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
     width: 100%;
-    justify-content: center;
-    margin-top: 10px;
+    font-size: 0.95rem;
   }
 
-  .navbar a {
-    margin: 0 0.5rem;
-    font-size: 0.9rem;
+  .contact-form button {
+    width: 100%;
   }
 
-  #theme-toggle {
-    margin-left: 0;
-    margin-top: 10px;
+  .contact-description {
+    font-size: 0.95rem;
+    padding: 0 5px;
   }
+
 }
