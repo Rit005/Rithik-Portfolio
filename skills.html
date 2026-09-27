@@ -1,79 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <title>Skills | Rithik Sharma</title>
-  <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Skills | Rithik Sharma</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Boxicons -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
+
 <body>
-  <header class="header">
-    <a href="#" class="logo">Portfolio</a>
-     <div class="menu-icon">
-        <i class='bx bx-dots-vertical-rounded'></i>
+
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div class="background">
+
+        <span class="orb orb-one"></span>
+        <span class="orb orb-two"></span>
+        <span class="orb orb-three"></span>
+
     </div>
 
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html" class="active">Skills</a>
-        <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <section class="skills-section">
-    <div class="section-content">
-      <h1 class="section-title">Tech <span class="highlight">Stack</span></h1>
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-      <div class="skill-category">
-        <h2>Languages</h2>
-        <p>Python, JavaScript, SQL</p>
-      </div>
+    <header class="header">
 
-      <div class="skill-category">
-        <h2>Frontend</h2>
-        <p>HTML, CSS, JavaScript, React.js</p>
-      </div>
+        <a href="index.html" class="logo">
+            Rithik<span>.</span>
+        </a>
 
-      <div class="skill-category">
-        <h2>Backend</h2>
-        <p>Node.js, Express.js, Django</p>
-      </div>
 
-      <div class="skill-category">
-        <h2>Databases</h2>
-        <p>MySQL, MongoDB, Postgre SQL, SQLite</p>
-      </div>
+        <div class="menu-icon">
 
-      <div class="skill-category">
-        <h2>Dev Tools</h2>
-        <p>Git & GitHub, VS Code, IntelliJ, Postman</p>
-      </div>
+            <i class='bx bx-menu'></i>
 
-      <div class="skill-category">
-        <h2>Data & Analytics</h2>
-        <p>Machine Learning, Power BI</p>
-      </div>
-    </div>
-  </section>
+        </div>
 
-  <script>
-    // dynamic animation for skills fade in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="skills.html" class="active">
+                Skills
+            </a>
+
+            <a href="experience.html">
+                Experience
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+
+    <main class="skills-page">
+
+
+        <!-- Heading -->
+
+        <section class="skills-heading">
+
+            <span class="section-label">
+                WHAT I WORK WITH
+            </span>
+
+            <h1>
+                Technical
+                <span>Skills</span>
+            </h1>
+
+            <p>
+                Technologies and tools I use to build scalable
+                software, backend systems, AI-powered applications,
+                and data-driven solutions.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             SKILL CARDS
+        ================================================== -->
+
+        <section class="skills-grid">
+
+
+            <!-- Programming -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-code-alt'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        Programming Languages
+                    </h2>
+
+                    <p>
+                        Core languages used for application development,
+                        backend systems, scripting, and data processing.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>Python</span>
+
+                        <span>JavaScript</span>
+
+                        <span>SQL</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Backend -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-server'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        Backend Development
+                    </h2>
+
+                    <p>
+                        Building REST APIs, backend services,
+                        authentication systems, and scalable
+                        application workflows.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>FastAPI</span>
+
+                        <span>Flask</span>
+
+                        <span>Node.js</span>
+
+                        <span>Express.js</span>
+
+                        <span>REST APIs</span>
+
+                        <span>JWT</span>
+
+                        <span>RBAC</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Frontend -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-devices'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        Frontend Development
+                    </h2>
+
+                    <p>
+                        Developing responsive interfaces and
+                        full-stack applications with modern
+                        frontend technologies.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>React.js</span>
+
+                        <span>JavaScript</span>
+
+                        <span>Tailwind CSS</span>
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Databases -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-data'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        Databases
+                    </h2>
+
+                    <p>
+                        Designing and working with relational and
+                        NoSQL databases for application and
+                        analytics workloads.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>MySQL</span>
+
+                        <span>PostgreSQL</span>
+
+                        <span>MongoDB</span>
+
+                        <span>SQLite</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- AI / ML -->
+
+            <article class="skill-card skill-card-featured">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-brain'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        AI / Machine Learning
+                    </h2>
+
+                    <p>
+                        Building AI-powered features, machine learning
+                        pipelines, LLM integrations, retrieval systems,
+                        and computer vision solutions.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>RAG</span>
+
+                        <span>LangChain</span>
+
+                        <span>Groq LLM API</span>
+
+                        <span>Scikit-learn</span>
+
+                        <span>XGBoost</span>
+
+                        <span>OpenCV</span>
+
+                        <span>InsightFace</span>
+
+                        <span>OCR</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- DevOps -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-cloud'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        DevOps & Deployment
+                    </h2>
+
+                    <p>
+                        Containerizing applications, managing CI/CD
+                        workflows, and working with deployment
+                        and development infrastructure.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>Docker</span>
+
+                        <span>Jenkins</span>
+
+                        <span>Kubernetes</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Development Tools -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-wrench'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        Development Tools
+                    </h2>
+
+                    <p>
+                        Tools used for source control, API testing,
+                        development, debugging, and collaborative
+                        software development.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>Git</span>
+
+                        <span>GitHub</span>
+
+                        <span>Postman</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Architecture -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class='bx bx-network-chart'></i>
+
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h2>
+                        Systems & Integration
+                    </h2>
+
+                    <p>
+                        Experience working across APIs, backend
+                        services, AI pipelines, databases, and
+                        application integrations.
+                    </p>
+
+
+                    <div class="skill-tags">
+
+                        <span>REST APIs</span>
+
+                        <span>Authentication</span>
+
+                        <span>RBAC</span>
+
+                        <span>AI Integration</span>
+
+                        <span>Data Processing</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- =================================================
+             TECH SUMMARY
+        ================================================== -->
+
+        <section class="skills-summary">
+
+            <div class="summary-item">
+
+                <strong>Backend</strong>
+
+                <span>
+                    APIs & Services
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>AI / ML</strong>
+
+                <span>
+                    Intelligent Systems
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>Data</strong>
+
+                <span>
+                    Processing & Analytics
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>DevOps</strong>
+
+                <span>
+                    Build & Deploy
+                </span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         SCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* =====================================================
+           MOBILE MENU
+        ====================================================== */
+
+        const menuIcon =
+            document.querySelector(".menu-icon");
+
+        const navbar =
+            document.querySelector(".navbar");
+
+
+        if (menuIcon && navbar) {
+
+            menuIcon.addEventListener("click", () => {
+
+                navbar.classList.toggle("active");
+
+
+                if (navbar.classList.contains("active")) {
+
+                    menuIcon.innerHTML =
+                        "<i class='bx bx-x'></i>";
+
+                } else {
+
+                    menuIcon.innerHTML =
+                        "<i class='bx bx-menu'></i>";
+
+                }
+
+            });
+
+
+            document
+                .querySelectorAll(".navbar a")
+                .forEach(link => {
+
+                    link.addEventListener("click", () => {
+
+                        navbar.classList.remove("active");
+
+                        menuIcon.innerHTML =
+                            "<i class='bx bx-menu'></i>";
+
+                    });
+
+                });
+
         }
-      });
-    });
 
-    document.querySelectorAll('.skill-category').forEach(el => observer.observe(el));
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script>
+
+        /* =====================================================
+           SKILL CARD REVEAL
+        ====================================================== */
+
+        const skillCards =
+            document.querySelectorAll(".skill-card");
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        skillCards.forEach(card => {
+
+            observer.observe(card);
+
+        });
+
+
+        /* =====================================================
+           MOUSE TILT EFFECT
+        ====================================================== */
+
+        skillCards.forEach(card => {
+
+            card.addEventListener(
+                "mousemove",
+                (event) => {
+
+                    if (window.innerWidth < 900) return;
+
+
+                    const rect =
+                        card.getBoundingClientRect();
+
+
+                    const x =
+                        event.clientX - rect.left;
+
+
+                    const y =
+                        event.clientY - rect.top;
+
+
+                    const centerX =
+                        rect.width / 2;
+
+
+                    const centerY =
+                        rect.height / 2;
+
+
+                    const rotateX =
+                        ((y - centerY) / centerY) * -2;
+
+
+                    const rotateY =
+                        ((x - centerX) / centerX) * 2;
+
+
+                    card.style.transform =
+                    `perspective(800px)
+                    rotateX(${rotateX}deg)
+                    rotateY(${rotateY}deg)
+                    translateY(-5px)`;
+
+                }
+            );
+
+
+            card.addEventListener(
+                "mouseleave",
+                () => {
+
+                    card.style.transform =
+                        "";
+
+                }
+            );
+
+        });
+
+    </script>
+
 </body>
+
 </html>

@@ -1,83 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <title>Projects | Rithik Sharma</title>
-  <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Rithik Sharma</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <header class="header">
-    <a href="#" class="logo">Portfolio</a>
-     <div class="menu-icon">
-        <i class='bx bx-dots-vertical-rounded'></i>
-    </div>
 
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-        <a href="experience.html">Experience</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="header">
 
-  <section class="projects">
-    <div class="projects-container">
-      <h1 class="section-title">My <span class="highlight">Projects</span></h1>
+        <a href="index.html" class="logo">
+            Rithik<span>.</span>
+        </a>
 
-      <div class="project">
-  <h2>🔹 Campus2Career</h2>
+        <div class="menu-icon">
+            <i class='bx bx-menu'></i>
+        </div>
 
-  <p><strong>Tech Stack:</strong> MERN, Python, Groq API (Llama 3.3), Machine Learning, REST APIs</p>
+        <nav class="navbar">
 
-  <p>
-    An AI-powered academic and recruitment platform connecting students and recruiters. 
-    Includes AI-based marksheet analysis, ML-driven resume builder, recruiter job matching system, 
-    and a real-time AI chatbot with an admin dashboard for insights and monitoring.
-  </p>
+            <a href="index.html">Home</a>
 
-  <a href="https://github.com/Rit005/Campus2Career.git" class="btn btn-secondary" target="_blank">View Project</a>
-</div>
+            <a href="about.html">About</a>
 
-      <div class="project">
-        <h2>🔹 BG-Removal</h2>
-        <p><strong>Tech Stack:</strong> MERN, AI, Clerk, REST APIs</p>
-        <p>An AI-powered SaaS application that removes image backgrounds. Users can upload images and use credits to process them. It includes authentication (Clerk), a credit-based access system, payment gateway, and a fully responsive React frontend for seamless experience.</p>
-        <a href="https://github.com/Rit005/BG-Removal.git" class="btn btn-secondary" target="_blank">View Project</a>
-      </div>
+            <a href="skills.html">Skills</a>
 
-      <div class="project">
-        <h2>🔹 VolatiSense</h2>
-        <p><strong>Tech Stack:</strong> MERN, Machine Learning, Docker, Jenkins</p>
-        <p>A financial risk assessment system using machine learning to predict market risks. Features automated data pipelines, anomaly detection, and real-time predictions. Built with containerized deployment (Docker) and CI/CD integration using Jenkins for smooth updates.</p>
-        <a href="https://github.com/DhruvTemura/VolatiSense.git" class="btn btn-secondary" target="_blank">View Project</a>
-      </div>
+            <a href="experience.html">Experience</a>
 
-      <div class="project">
-        <h2>🔹 YumRush</h2>
-        <p><strong>Tech Stack:</strong> Mern, JWT, Stripe API</p>
-        <p>A full-stack food delivery web app built with React, Node.js, Express, and MongoDB, featuring JWT authentication, Stripe payments, and real-time order tracking with an admin dashboard..</p>
-        <a href="https://github.com/Rit005/Food-Deleivery.git" class="btn btn-secondary" target="_blank">View Project</a>
-      </div>
-    </div>
-  </section>
+            <a href="projects.html" class="active">
+                Projects
+            </a>
 
-  <script>
-    const projects = document.querySelectorAll('.project');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    });
-    projects.forEach(project => observer.observe(project));
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script>
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Projects -->
+    <main>
+
+        <section class="projects">
+
+            <div class="projects-container">
+
+                <!-- Heading -->
+
+                <div class="projects-heading">
+
+                    <span class="section-label">
+                        WHAT I'VE BUILT
+                    </span>
+
+                    <h1>
+                        Featured <span>Projects</span>
+                    </h1>
+
+                    <p>
+                        A selection of projects focused on software engineering,
+                        AI, backend systems, and real-world problem solving.
+                    </p>
+
+                </div>
+
+
+                <!-- Project Grid -->
+
+                <div class="projects-grid">
+
+
+                    <!-- Campus2Career -->
+
+                    <article class="project">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-icon">
+                            <i class='bx bx-brain'></i>
+                        </div>
+
+                        <h2>
+                            Campus2Career
+                        </h2>
+
+                        <div class="project-stack">
+                        <span>MERN</span>
+                        <span>Python</span>
+                        <span>Groq API</span>
+                        <span>Llama 3.3</span>
+                        <span>Machine Learning</span>
+                        <span>REST APIs</span>
+                    </div>
+                        <p class="project-description">
+                            An AI-powered academic and recruitment platform
+                            connecting students and recruiters. Includes AI-based
+                            marksheet analysis, ML-driven resume building,
+                            recruiter job matching, and a real-time AI chatbot
+                            with an admin dashboard for insights and monitoring.
+                        </p>
+
+                        <div class="project-footer">
+
+                            <a
+                                href="https://github.com/Rit005/Campus2Career.git"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                View Project
+
+                                <i class='bx bx-right-arrow-alt'></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BG Removal -->
+
+                    <article class="project">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-icon">
+                            <i class='bx bx-image'></i>
+                        </div>
+
+                        <h2>
+                            BG-Removal
+                        </h2>
+
+                        <div class="project-stack">
+                        <span>MERN</span>
+                        <span>AI</span>
+                        <span>Clerk</span>
+                        <span>REST APIs</span>
+                    </div>
+
+                        <p class="project-description">
+                            An AI-powered SaaS application for removing image
+                            backgrounds. Includes image processing credits,
+                            Clerk authentication, payment integration, and
+                            a responsive React frontend.
+                        </p>
+
+                        <div class="project-footer">
+
+                            <a
+                                href="https://github.com/Rit005/BG-Removal.git"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                View Project
+
+                                <i class='bx bx-right-arrow-alt'></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VolatiSense -->
+
+                    <article class="project">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <div class="project-icon">
+                            <i class='bx bx-line-chart'></i>
+                        </div>
+
+                        <h2>
+                            VolatiSense
+                        </h2>
+
+                        <div class="project-stack">
+                            <span>MERN</span>
+                            <span>Machine Learning</span>
+                            <span>Docker</span>
+                            <span>Jenkins</span>
+                        </div>
+
+                        <p class="project-description">
+                            A financial risk assessment system using machine
+                            learning to predict market risks. Features automated
+                            data pipelines, anomaly detection, real-time
+                            predictions, Docker-based deployment, and Jenkins
+                            CI/CD integration.
+                        </p>
+
+                        <div class="project-footer">
+
+                            <a
+                                href="https://github.com/DhruvTemura/VolatiSense.git"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                View Project
+
+                                <i class='bx bx-right-arrow-alt'></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- YumRush -->
+
+                    <article class="project">
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                        <div class="project-icon">
+                            <i class='bx bx-food-menu'></i>
+                        </div>
+
+                        <h2>
+                            YumRush
+                        </h2>
+
+                        <div class="project-stack">
+                        <span>MERN</span>
+                        <span>JWT</span>
+                        <span>Stripe API</span>
+                    </div>
+
+                        <p class="project-description">
+                            A full-stack food delivery application built with
+                            React, Node.js, Express, and MongoDB, featuring
+                            JWT authentication, Stripe payments, real-time
+                            order tracking, and an admin dashboard.
+                        </p>
+
+                        <div class="project-footer">
+
+                            <a
+                                href="https://github.com/Rit005/Food-Deleivery.git"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                View Project
+
+                                <i class='bx bx-right-arrow-alt'></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Mobile Menu -->
+
+    <script>
+
+        const menuIcon =
+            document.querySelector(".menu-icon");
+
+        const navbar =
+            document.querySelector(".navbar");
+
+
+        menuIcon.addEventListener("click", () => {
+
+            navbar.classList.toggle("active");
+
+            menuIcon.innerHTML =
+                navbar.classList.contains("active")
+                    ? "<i class='bx bx-x'></i>"
+                    : "<i class='bx bx-menu'></i>";
+
+        });
+
+
+        document.querySelectorAll(".navbar a")
+            .forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    navbar.classList.remove("active");
+
+                    menuIcon.innerHTML =
+                        "<i class='bx bx-menu'></i>";
+
+                });
+
+            });
+
+
+        /* Project reveal animation */
+
+        const projects =
+            document.querySelectorAll(".project");
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("show");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        projects.forEach(project => {
+
+            observer.observe(project);
+
+        });
+
+    </script>
+
 </body>
+
 </html>

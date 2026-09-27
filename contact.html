@@ -1,57 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Rithik Sharma</title>
-  <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Rithik Sharma</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <header class="header">
-    <a href="#" class="logo">Portfolio</a>
-     <div class="menu-icon">
-        <i class='bx bx-dots-vertical-rounded'></i>
-    </div>
 
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-        <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+    <!-- HEADER -->
+    <header class="header">
 
-  <section class="contact-section">
-    <h1 style="text-align:center; font-size:2.8rem; color:var(--primary-accent); margin-bottom: 10px;">Contact <span class="highlight">Me</span></h1>
-    <p class="contact-description" style="text-align:center; color:var(--secondary-accent); font-size:1.1rem; margin-bottom: 40px;">
-      I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to contact me via the form or the details below.
-    </p>
+        <a href="index.html" class="logo">
+            Rithik<span>.</span>
+        </a>
 
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h2>Let's Connect</h2>
-        <p><strong>Email:</strong> rithiksharma006@gmail.com</p>
-        <p><strong>Phone:</strong> +91 88940 66915</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rithik-sharma-19aa51295/" target="_blank">linkedin.com/in/rithik-sharma</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Rit005" target="_blank">github.com/Rit005</a></p>
-      </div>
+        <div class="menu-icon">
+            <i class='bx bx-menu'></i>
+        </div>
 
-      <div class="contact-form">
-        <h2>Send a Message</h2>
-        <form action="https://formspree.io/f/mjkylvbz" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTACT -->
+    <main>
+
+        <section class="contact-section">
+
+            <!-- Section Heading -->
+            <div class="contact-heading">
+
+                <span class="contact-eyebrow">
+                    GET IN TOUCH
+                </span>
+
+                <h1>
+                    Let's <span>Connect</span>
+                </h1>
+
+                <p>
+                    Have a project, opportunity, or idea in mind?
+                    I'd love to hear from you and explore how we can
+                    build something meaningful together.
+                </p>
+
+            </div>
+
+
+            <!-- Contact Grid -->
+            <div class="contact-grid">
+
+
+                <!-- LEFT SIDE -->
+                <div class="contact-info">
+
+                    <div class="contact-intro">
+
+                        <span class="contact-icon">
+                            <i class='bx bx-paper-plane'></i>
+                        </span>
+
+                        <div>
+                            <h2>Let's Connect</h2>
+
+                            <p>
+                                Feel free to reach out through any of
+                                the channels below.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <a
+                        href="mailto:rithiksharma006@gmail.com"
+                        class="contact-item">
+
+                        <div class="contact-item-icon">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+
+                        <div class="contact-item-content">
+                            <span>Email</span>
+                            <strong>
+                                rithiksharma006@gmail.com
+                            </strong>
+                        </div>
+
+                        <i class='bx bx-right-arrow-alt contact-arrow'></i>
+
+                    </a>
+
+
+                    <!-- Phone -->
+                    <a
+                        href="tel:+918894066915"
+                        class="contact-item">
+
+                        <div class="contact-item-icon">
+                            <i class='bx bx-phone'></i>
+                        </div>
+
+                        <div class="contact-item-content">
+                            <span>Phone</span>
+                            <strong>
+                                +91 88940 66915
+                            </strong>
+                        </div>
+
+                        <i class='bx bx-right-arrow-alt contact-arrow'></i>
+
+                    </a>
+
+
+                    <!-- LinkedIn -->
+                    <a
+                        href="https://www.linkedin.com/in/rithik-sharma-19aa51295/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item">
+
+                        <div class="contact-item-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </div>
+
+                        <div class="contact-item-content">
+                            <span>LinkedIn</span>
+                            <strong>
+                                linkedin.com/in/rithik-sharma
+                            </strong>
+                        </div>
+
+                        <i class='bx bx-right-arrow-alt contact-arrow'></i>
+
+                    </a>
+
+
+                    <!-- GitHub -->
+                    <a
+                        href="https://github.com/Rit005"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item">
+
+                        <div class="contact-item-icon">
+                            <i class='bx bxl-github'></i>
+                        </div>
+
+                        <div class="contact-item-content">
+                            <span>GitHub</span>
+                            <strong>
+                                github.com/Rit005
+                            </strong>
+                        </div>
+
+                        <i class='bx bx-right-arrow-alt contact-arrow'></i>
+
+                    </a>
+
+
+                    <!-- Availability -->
+                    <div class="availability-card">
+
+                        <span class="availability-dot"></span>
+
+                        <div>
+                            <strong>Open to opportunities</strong>
+                            <small>
+                                Available for software & AI engineering roles
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="contact-form-card">
+
+                    <div class="form-header">
+
+                        <span class="form-icon">
+                            <i class='bx bx-message-rounded-detail'></i>
+                        </span>
+
+                        <div>
+                            <h2>Send a Message</h2>
+
+                            <p>
+                                I'll get back to you as soon as possible.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        action="https://formspree.io/f/mjkylvbz"
+                        method="POST"
+                        class="contact-form">
+
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class='bx bx-user'></i>
+
+                                <input
+                                    id="name"
+                                    type="text"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <i class='bx bx-envelope'></i>
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <div class="input-wrapper textarea-wrapper">
+
+                                <i class='bx bx-message-detail'></i>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Tell me about your project or opportunity..."
+                                    required></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="contact-submit">
+
+                            <span>Send Message</span>
+
+                            <i class='bx bx-send'></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
